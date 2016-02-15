@@ -1,6 +1,6 @@
 package com.andreiruse.jdmengine.runtime
 
-import com.andreiruse.jdmengine.bpmnParser.BpmnParser
+import com.andreiruse.jdmengine.input.bpmnParser.BpmnParser
 import com.andreiruse.jdmengine.runtime.config.EngineConfig
 import org.apache.commons.cli.*
 import org.slf4j.LoggerFactory
