@@ -1,4 +1,4 @@
 package com.andreiruse.jdmengine.domain;
 
-public interface BpmnObject {
+public interface GraphObject {
 }

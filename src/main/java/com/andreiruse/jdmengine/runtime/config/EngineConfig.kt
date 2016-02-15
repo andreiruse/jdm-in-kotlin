@@ -1,6 +1,6 @@
 package com.andreiruse.jdmengine.runtime.config
 
-import com.andreiruse.jdmengine.exceptions.BpmnEngineRuntimeException
+import com.andreiruse.jdmengine.exceptions.JdmEngineRuntimeException
 import org.apache.commons.configuration.BaseConfiguration
 import org.apache.commons.configuration.Configuration
 import org.apache.commons.configuration.ConfigurationException
@@ -19,7 +19,7 @@ class EngineConfig(private val environment: String?) {
             configuration = PropertiesConfiguration("config/$environment.config")
         } catch (e: ConfigurationException) {
             logger.error("Could not load configuration")
-            throw BpmnEngineRuntimeException("Error loading configuration for environment " + environment, e)
+            throw JdmEngineRuntimeException("Error loading configuration for environment " + environment, e)
         }
 
         logger.info("Loaded config file")

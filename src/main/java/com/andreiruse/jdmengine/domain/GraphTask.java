@@ -5,10 +5,10 @@ import com.andreiruse.jdmengine.domain.status.TaskStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface BpmnTask extends BpmnObject {
+public interface GraphTask extends GraphObject {
     TaskStatus status = null;
     String title = "";
-    List<BpmnTask> incomingLinks = new ArrayList<>();
-    List<BpmnTask> outgoingLinks = new ArrayList<>();
+    List<GraphTask> incomingLinks = new ArrayList<>();
+    List<GraphTask> outgoingLinks = new ArrayList<>();
 
 }
